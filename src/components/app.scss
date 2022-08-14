@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'ProximaNova';
+  src: local('ProximaNova'),
+    url('../assets/fonts/proxima-nova.ttf') format('truetype');
+}
+
+html {
+  display: block;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'ProximaNova';
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.map {
+  width: 100%;
+  min-height: 92vh;
+  z-index: 5;
+  border-bottom: 3px grey;
+}
+
+.map-popup .leaflet-popup-content-wrapper {
+  border: 1px darkred;
+  background-color: palevioletred;
+}
+
+.map-popup .leaflet-popup-tip {
+  background-color: palevioletred;
+}
+
+.footer {
+  background-color: rgb(31, 31, 29);
+  border-top: 4px solid grey;
+  text-align: center;
+  h5 {
+    color: palevioletred;
+  }
+}
