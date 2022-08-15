@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "webpack serve --open --config webpack.dev.js ",
     "build": "webpack --config webpack.prod.js",
-    "start": "PORT=8080 node start ./main.js",
+    "start": "node ./dist/main.js",
     "test": "jest --env=jsdom  --coverage ",
     "lint": "eslint -c eslintrc.json  --ext .tsx,.ts src",
     "lint:fix": "eslint -c eslintrc.json --fix --cache \"src/**/*.{js,jsx,ts,tsx}\""
