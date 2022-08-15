@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "webpack serve --open --config webpack.dev.js ",
+    "start": "yarn install && webpack serve --open --config webpack.dev.js ",
     "build": "webpack --config webpack.prod.js",
     "test": "jest --env=jsdom  --coverage ",
     "lint": "eslint -c eslintrc.json  --ext .tsx,.ts src",
